@@ -13,5 +13,8 @@
     "vite": "^4.3.2",
     "webxdc-dev": "^0.17.0",
     "webxdc-vite-plugins": "github:webxdc/webxdc-vite-plugins"
+  },
+  "dependencies": {
+    "html-to-image": "^1.11.11"
   }
 }
