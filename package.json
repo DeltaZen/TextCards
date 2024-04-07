@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "dev-mini": "vite --port 3000",
+    "dev": "concurrently \"npm run dev-mini\" \"webxdc-dev run http://localhost:3000\"",
+    "format": "prettier --write .",
+    "check": "prettier --check .",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.1.0",
+    "prettier": "^3.0.3",
+    "vite": "^4.3.2",
+    "webxdc-dev": "^0.17.0",
+    "webxdc-vite-plugins": "github:webxdc/webxdc-vite-plugins"
+  }
+}
