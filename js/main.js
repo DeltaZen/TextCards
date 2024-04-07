@@ -1,4 +1,4 @@
-import { toBlob } from "html-to-image";
+import { toJpeg } from "html-to-image";
 
 let browserLang = (window.navigator && window.navigator.language) || "en-US";
 browserLang = browserLang.slice(0, 2).toLowerCase();
@@ -61,11 +61,14 @@ function setStyle(btn) {
 }
 
 function share() {
-  toBlob(document.getElementById("editor")).then(function (blob) {
-    window.webxdc.sendToChat({
-      file: { name: "card.png", blob, type: "image" },
-    });
-  });
+  toJpeg(document.getElementById("editor"), { quality: 0.95 }).then(
+    function (dataUrl) {
+      const base64 = dataUrl.split(",")[1];
+      window.webxdc.sendToChat({
+        file: { name: "card.jpeg", type: "image", base64 },
+      });
+    },
+  );
 }
 
 main();
