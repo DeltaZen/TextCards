@@ -35,7 +35,7 @@ function main() {
   root.append(editor);
 
   const reel = h("div", { id: "reel" });
-  for (let i = 0; i <= 257; i++) {
+  for (let i = 0; i <= 233; i++) {
     const check = h("i", { class: "check" });
     let gradClass = "thumbnail " + "grad" + i + (style == i ? " selected" : "");
     const gradBtn = h("div", { class: gradClass, data: i }, check);
