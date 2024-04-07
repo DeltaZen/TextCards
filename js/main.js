@@ -62,7 +62,9 @@ function setStyle(btn) {
 
 function share() {
   toBlob(document.getElementById("editor")).then(function (blob) {
-    window.webxdc.sendToChat({ file: { name: "card.png", blob } });
+    window.webxdc.sendToChat({
+      file: { name: "card.png", blob, type: "image" },
+    });
   });
 }
 
