@@ -17,6 +17,11 @@ const editor = h(
   { id: "editor", class: "grad" + style, contenteditable: true },
   placeholder,
 );
+editor.onclick = function () {
+  if (editor.innerText === placeholder) {
+    window.getSelection().selectAllChildren(editor);
+  }
+};
 
 function h(tag, attributes, ...children) {
   const element = document.createElement(tag);
@@ -35,7 +40,7 @@ function main() {
   root.append(editor);
 
   const reel = h("div", { id: "reel" });
-  for (let i = 0; i <= 233; i++) {
+  for (let i = 0; i <= 191; i++) {
     const check = h("i", { class: "check" });
     let gradClass = "thumbnail " + "grad" + i + (style == i ? " selected" : "");
     const gradBtn = h("div", { class: gradClass, data: i }, check);

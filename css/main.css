@@ -1,3 +1,4 @@
+/* don't use #editor instad of [contenteditable] otherwise text color will not be overriden by class */
 [contenteditable] {
   /* Use Flexbox to center the content */
   display: flex;
@@ -16,6 +17,7 @@
   color: #fff;
   font-size: 30px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 #root {
@@ -140,17 +142,16 @@
 .grad1 {
   background-image: linear-gradient(
     to right,
-    rgb(127, 0, 255),
-    rgb(225, 0, 255)
+    rgb(142, 45, 226),
+    rgb(74, 0, 224)
   );
 }
 .grad2 {
   background-image: linear-gradient(
-    to right,
-    rgb(255, 216, 155),
-    rgb(25, 84, 123)
+    109.6deg,
+    rgb(0, 204, 130) 11.2%,
+    rgb(58, 181, 46) 91.7%
   );
-  text-shadow: 1px 1px 2px black;
 }
 .grad3 {
   background-image: linear-gradient(
@@ -162,13 +163,24 @@
 }
 .grad4 {
   background-image: linear-gradient(
-    rgb(30, 150, 0),
-    rgb(255, 242, 0),
-    rgb(255, 0, 0)
+    to right,
+    rgb(15, 32, 39),
+    rgb(32, 58, 67),
+    rgb(44, 83, 100)
+  );
+}
+.grad5 {
+  background-image: linear-gradient(
+    to right,
+    rgb(247, 151, 30),
+    rgb(255, 210, 0)
   );
   text-shadow: 1px 1px 2px black;
 }
-.grad5 {
+.grad6 {
+  background-image: linear-gradient(to right, rgb(240, 0, 0), rgb(220, 40, 30));
+}
+.grad7 {
   background-image: linear-gradient(
     110.7deg,
     rgb(255, 81, 47) 1.7%,
@@ -185,44 +197,30 @@
   );
   text-shadow: 1px 1px 2px black;
 }
-.grad6 {
+.grad8 {
   background-image: linear-gradient(
     to right,
-    rgb(247, 151, 30),
-    rgb(255, 210, 0)
+    rgb(255, 216, 155),
+    rgb(25, 84, 123)
   );
   text-shadow: 1px 1px 2px black;
 }
-.grad7 {
-  background-image: linear-gradient(to right, rgb(240, 0, 0), rgb(220, 40, 30));
-}
-.grad8 {
-  background-image: linear-gradient(
-    rgb(0, 0, 0) 10%,
-    rgb(255, 0, 0) 50%,
-    rgb(255, 216, 51) 95%
-  );
-}
 .grad9 {
-  background-image: linear-gradient(
-    to right,
-    rgb(255, 0, 153),
-    rgb(73, 50, 64)
-  );
+  background-image: linear-gradient(to right, rgb(255, 0, 132), rgb(51, 0, 27));
 }
 .grad10 {
   background-image: linear-gradient(
-    to right,
-    rgb(15, 32, 39),
-    rgb(32, 58, 67),
-    rgb(44, 83, 100)
+    rgb(30, 150, 0),
+    rgb(255, 242, 0),
+    rgb(255, 0, 0)
   );
+  text-shadow: 1px 1px 2px black;
 }
 .grad11 {
   background-image: linear-gradient(
     to right,
-    rgb(142, 45, 226),
-    rgb(74, 0, 224)
+    rgb(127, 0, 255),
+    rgb(225, 0, 255)
   );
 }
 .grad12 {
@@ -261,8 +259,8 @@
 .grad16 {
   background-image: linear-gradient(
     to right,
-    rgb(241, 39, 17),
-    rgb(245, 175, 25)
+    rgb(254, 140, 0),
+    rgb(248, 54, 0)
   );
 }
 .grad17 {
@@ -373,9 +371,8 @@
 .grad31 {
   background-image: linear-gradient(
     to right,
-    rgb(89, 193, 115),
-    rgb(161, 127, 224),
-    rgb(93, 38, 193)
+    rgb(17, 153, 142),
+    rgb(56, 239, 125)
   );
 }
 .grad32 {
@@ -394,11 +391,7 @@
   );
 }
 .grad34 {
-  background-image: linear-gradient(
-    to right,
-    rgb(99, 99, 99),
-    rgb(162, 171, 88)
-  );
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(231, 76, 60));
 }
 .grad35 {
   background-image: linear-gradient(
@@ -408,18 +401,15 @@
   );
 }
 .grad36 {
-  background-image: linear-gradient(
-    to right,
-    rgb(168, 192, 255),
-    rgb(63, 43, 150)
-  );
+  background-image: linear-gradient(to right, rgb(72, 85, 99), rgb(41, 50, 60));
 }
 .grad37 {
   background-image: linear-gradient(
     to right,
-    rgb(51, 51, 51),
-    rgb(221, 24, 24)
+    rgb(131, 164, 212),
+    rgb(182, 251, 255)
   );
+  text-shadow: 1px 1px 2px black;
 }
 .grad38 {
   background-image: linear-gradient(
@@ -460,9 +450,9 @@
 }
 .grad43 {
   background-image: linear-gradient(
-    to right,
-    rgb(17, 153, 142),
-    rgb(56, 239, 125)
+    rgb(0, 0, 0) 10%,
+    rgb(255, 0, 0) 50%,
+    rgb(255, 216, 51) 95%
   );
 }
 .grad44 {
@@ -475,8 +465,8 @@
 .grad45 {
   background-image: linear-gradient(
     to right,
-    rgb(252, 92, 125),
-    rgb(106, 130, 251)
+    rgb(240, 194, 123),
+    rgb(75, 18, 72)
   );
 }
 .grad46 {
@@ -489,8 +479,8 @@
 .grad47 {
   background-image: linear-gradient(
     to right,
-    rgb(201, 75, 75),
-    rgb(75, 19, 79)
+    rgb(148, 142, 153),
+    rgb(46, 20, 55)
   );
 }
 .grad48 {
@@ -547,15 +537,15 @@
 .grad56 {
   background-image: linear-gradient(
     to right,
-    rgb(0, 242, 96),
-    rgb(5, 117, 230)
+    rgb(123, 67, 151),
+    rgb(220, 36, 48)
   );
 }
 .grad57 {
   background-image: linear-gradient(
     to right,
-    rgb(252, 74, 26),
-    rgb(247, 183, 51)
+    rgb(96, 108, 136),
+    rgb(63, 76, 107)
   );
 }
 .grad58 {
@@ -655,8 +645,17 @@
 .grad70 {
   background-image: linear-gradient(
     to right,
-    rgb(217, 167, 199),
-    rgb(255, 252, 220)
+    rgb(85, 205, 252),
+    rgb(179, 157, 233),
+    rgb(247, 168, 184),
+    rgb(246, 216, 221),
+    rgb(255, 255, 255) 45%,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255) 55%,
+    rgb(246, 216, 221),
+    rgb(247, 168, 184),
+    rgb(179, 157, 233),
+    rgb(85, 205, 252)
   );
   color: black;
 }
@@ -677,17 +676,17 @@
 .grad73 {
   background-image: linear-gradient(
     to right,
-    rgb(100, 43, 115),
-    rgb(198, 66, 110)
+    rgb(209, 145, 60),
+    rgb(255, 209, 148)
   );
+  text-shadow: 1px 1px 2px black;
 }
 .grad74 {
   background-image: linear-gradient(
     to right,
-    rgb(28, 146, 210),
-    rgb(242, 252, 254)
+    rgb(173, 209, 0),
+    rgb(123, 146, 10)
   );
-  text-shadow: 1px 1px 2px black;
 }
 .grad75 {
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(15, 155, 15));
@@ -695,17 +694,18 @@
 .grad76 {
   background-image: linear-gradient(
     to right,
-    rgb(221, 214, 243),
-    rgb(250, 172, 168)
+    rgb(18, 194, 233),
+    rgb(196, 113, 237),
+    rgb(246, 79, 89)
   );
-  text-shadow: 1px 1px 2px black;
 }
 .grad77 {
   background-image: linear-gradient(
     to right,
-    rgb(203, 53, 107),
-    rgb(189, 63, 50)
+    rgb(112, 225, 245),
+    rgb(255, 209, 148)
   );
+  text-shadow: 1px 1px 2px black;
 }
 .grad78 {
   background-image: linear-gradient(
@@ -718,9 +718,10 @@
 .grad79 {
   background-image: linear-gradient(
     to right,
-    rgb(40, 60, 134),
-    rgb(69, 162, 71)
+    rgb(241, 242, 181),
+    rgb(19, 80, 88)
   );
+  text-shadow: 1px 1px 2px black;
 }
 .grad80 {
   background-image: linear-gradient(
@@ -733,8 +734,8 @@
 .grad81 {
   background-image: linear-gradient(
     to right,
-    rgb(192, 57, 43),
-    rgb(142, 68, 173)
+    rgb(255, 161, 127),
+    rgb(0, 34, 62)
   );
 }
 .grad82 {
@@ -758,10 +759,9 @@
 .grad85 {
   background-image: linear-gradient(
     to right,
-    rgb(86, 204, 242),
-    rgb(47, 128, 237)
+    rgb(185, 147, 214),
+    rgb(140, 166, 219)
   );
-  text-shadow: 1px 1px 2px black;
 }
 .grad86 {
   background-image: linear-gradient(
@@ -783,18 +783,16 @@
 .grad89 {
   background-image: linear-gradient(
     to right,
-    rgb(74, 194, 154),
-    rgb(189, 255, 243)
+    rgb(233, 211, 98),
+    rgb(51, 51, 51)
   );
-  color: black;
 }
 .grad90 {
   background-image: linear-gradient(
     to right,
-    rgb(178, 254, 250),
-    rgb(14, 210, 247)
+    rgb(82, 82, 82),
+    rgb(61, 114, 180)
   );
-  color: black;
 }
 .grad91 {
   background-image: linear-gradient(
@@ -874,8 +872,8 @@
 .grad102 {
   background-image: linear-gradient(
     to right,
-    rgb(67, 198, 172),
-    rgb(25, 22, 84)
+    rgb(30, 19, 12),
+    rgb(154, 132, 120)
   );
 }
 .grad103 {
@@ -932,17 +930,16 @@
 .grad110 {
   background-image: linear-gradient(
     to right,
-    rgb(156, 236, 251),
-    rgb(101, 199, 247),
-    rgb(0, 82, 212)
+    rgb(253, 252, 71),
+    rgb(36, 254, 65)
   );
   text-shadow: 1px 1px 2px black;
 }
 .grad111 {
-  background-image: linear-gradient(
-    to right,
-    rgb(219, 230, 246),
-    rgb(197, 121, 109)
+  background-image: radial-gradient(
+    755px at 10.1% 95.3%,
+    rgb(242, 188, 141) 0%,
+    rgb(242, 159, 141) 100.2%
   );
   text-shadow: 1px 1px 2px black;
 }
@@ -956,8 +953,8 @@
 .grad113 {
   background-image: linear-gradient(
     to right,
-    rgb(103, 178, 111),
-    rgb(76, 162, 205)
+    rgb(115, 200, 169),
+    rgb(55, 59, 68)
   );
 }
 .grad114 {
@@ -1070,8 +1067,8 @@
 .grad129 {
   background-image: linear-gradient(
     to right,
-    rgb(189, 195, 199),
-    rgb(44, 62, 80)
+    rgb(102, 102, 0),
+    rgb(153, 153, 102)
   );
 }
 .grad130 {
@@ -1106,16 +1103,14 @@
 .grad134 {
   background-image: linear-gradient(
     to right,
-    rgb(247, 157, 0),
-    rgb(100, 243, 140)
+    rgb(198, 255, 221),
+    rgb(251, 215, 134),
+    rgb(247, 121, 125)
   );
+  text-shadow: 1px 1px 2px black;
 }
 .grad135 {
-  background-image: linear-gradient(
-    to right,
-    rgb(203, 45, 62),
-    rgb(239, 71, 58)
-  );
+  background-image: linear-gradient(to right, rgb(82, 194, 52), rgb(6, 23, 0));
 }
 .grad136 {
   background-image: linear-gradient(
@@ -1123,6 +1118,7 @@
     rgb(86, 171, 47),
     rgb(168, 224, 99)
   );
+  text-shadow: 1px 1px 2px black;
 }
 .grad137 {
   background-image: linear-gradient(to right, rgb(0, 4, 40), rgb(0, 78, 146));
@@ -1138,13 +1134,7 @@
   background-image: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
 }
 .grad140 {
-  background-image: linear-gradient(
-    to right,
-    rgb(41, 128, 185),
-    rgb(109, 213, 250),
-    rgb(255, 255, 255)
-  );
-  text-shadow: 1px 1px 2px black;
+  background-image: linear-gradient(to right, rgb(120, 2, 6), rgb(6, 17, 97));
 }
 .grad141 {
   background-image: linear-gradient(
@@ -1163,8 +1153,8 @@
 .grad143 {
   background-image: linear-gradient(
     to right,
-    rgb(233, 100, 67),
-    rgb(144, 78, 149)
+    rgb(19, 106, 138),
+    rgb(38, 120, 113)
   );
 }
 .grad144 {
@@ -1175,11 +1165,7 @@
   );
 }
 .grad145 {
-  background-image: linear-gradient(
-    to right,
-    rgb(58, 123, 213),
-    rgb(58, 96, 115)
-  );
+  background-image: linear-gradient(to right, rgb(0, 191, 143), rgb(0, 21, 16));
 }
 .grad146 {
   background-image: linear-gradient(
@@ -1199,8 +1185,8 @@
 .grad148 {
   background-image: linear-gradient(
     to right,
-    rgb(255, 95, 109),
-    rgb(255, 195, 113)
+    rgb(251, 211, 233),
+    rgb(187, 55, 125)
   );
 }
 .grad149 {
@@ -1235,8 +1221,8 @@
 .grad153 {
   background-image: linear-gradient(
     to right,
-    rgb(168, 0, 119),
-    rgb(102, 255, 0)
+    rgb(100, 145, 115),
+    rgb(219, 213, 164)
   );
 }
 .grad154 {
@@ -1313,8 +1299,8 @@
 .grad164 {
   background-image: linear-gradient(
     to right,
-    rgb(90, 63, 55),
-    rgb(44, 119, 68)
+    rgb(167, 55, 55),
+    rgb(122, 40, 40)
   );
 }
 .grad165 {
@@ -1352,8 +1338,8 @@
 .grad170 {
   background-image: linear-gradient(
     to right,
-    rgb(253, 116, 108),
-    rgb(255, 144, 104)
+    rgb(106, 145, 19),
+    rgb(20, 21, 23)
   );
 }
 .grad171 {
@@ -1388,8 +1374,8 @@
 .grad175 {
   background-image: linear-gradient(
     to right,
-    rgb(192, 36, 37),
-    rgb(240, 203, 53)
+    rgb(54, 0, 51),
+    rgb(11, 135, 147)
   );
 }
 .grad176 {
@@ -1466,6 +1452,7 @@
     rgb(252, 0, 255),
     rgb(0, 219, 222)
   );
+  text-shadow: 1px 1px 2px black;
 }
 .grad187 {
   background-image: linear-gradient(
@@ -1477,10 +1464,9 @@
 .grad188 {
   background-image: linear-gradient(
     to right,
-    rgb(204, 204, 178),
-    rgb(117, 117, 25)
+    rgb(100, 65, 165),
+    rgb(42, 8, 69)
   );
-  text-shadow: 1px 1px 2px black;
 }
 .grad189 {
   background-image: linear-gradient(
@@ -1493,8 +1479,8 @@
 .grad190 {
   background-image: linear-gradient(
     to right,
-    rgb(238, 156, 167),
-    rgb(255, 221, 225)
+    rgb(0, 79, 249),
+    rgb(255, 249, 76)
   );
   text-shadow: 1px 1px 2px black;
 }
@@ -1503,295 +1489,5 @@
     to right,
     rgb(186, 139, 2),
     rgb(24, 24, 24)
-  );
-}
-.grad192 {
-  background-image: linear-gradient(
-    to right,
-    rgb(82, 82, 82),
-    rgb(61, 114, 180)
-  );
-}
-.grad193 {
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 79, 249),
-    rgb(255, 249, 76)
-  );
-  text-shadow: 1px 1px 2px black;
-}
-.grad194 {
-  background-image: linear-gradient(
-    to right,
-    rgb(106, 145, 19),
-    rgb(20, 21, 23)
-  );
-}
-.grad195 {
-  background-image: linear-gradient(
-    to right,
-    rgb(241, 242, 181),
-    rgb(19, 80, 88)
-  );
-  text-shadow: 1px 1px 2px black;
-}
-.grad196 {
-  background-image: linear-gradient(
-    to right,
-    rgb(209, 145, 60),
-    rgb(255, 209, 148)
-  );
-  text-shadow: 1px 1px 2px black;
-}
-.grad197 {
-  background-image: linear-gradient(
-    to right,
-    rgb(123, 67, 151),
-    rgb(220, 36, 48)
-  );
-}
-.grad198 {
-  background-image: linear-gradient(
-    to right,
-    rgb(185, 147, 214),
-    rgb(140, 166, 219)
-  );
-}
-.grad199 {
-  background-image: linear-gradient(
-    to right,
-    rgb(19, 106, 138),
-    rgb(38, 120, 113)
-  );
-}
-.grad200 {
-  background-image: linear-gradient(to right, rgb(0, 191, 143), rgb(0, 21, 16));
-}
-.grad201 {
-  background-image: linear-gradient(to right, rgb(255, 0, 132), rgb(51, 0, 27));
-}
-.grad202 {
-  background-image: linear-gradient(
-    to right,
-    rgb(198, 255, 221),
-    rgb(251, 215, 134),
-    rgb(247, 121, 125)
-  );
-  text-shadow: 1px 1px 2px black;
-}
-.grad203 {
-  background-image: linear-gradient(
-    to right,
-    rgb(102, 102, 0),
-    rgb(153, 153, 102)
-  );
-}
-.grad204 {
-  background-image: linear-gradient(
-    to right,
-    rgb(100, 65, 165),
-    rgb(42, 8, 69)
-  );
-}
-.grad205 {
-  background-image: linear-gradient(
-    to right,
-    rgb(233, 211, 98),
-    rgb(51, 51, 51)
-  );
-}
-.grad206 {
-  background-image: linear-gradient(
-    to right,
-    rgb(67, 206, 162),
-    rgb(24, 90, 157)
-  );
-}
-.grad207 {
-  background-image: linear-gradient(
-    to right,
-    rgb(255, 161, 127),
-    rgb(0, 34, 62)
-  );
-}
-.grad208 {
-  background-image: linear-gradient(
-    to right,
-    rgb(54, 0, 51),
-    rgb(11, 135, 147)
-  );
-}
-.grad209 {
-  background-image: linear-gradient(
-    to right,
-    rgb(148, 142, 153),
-    rgb(46, 20, 55)
-  );
-}
-.grad210 {
-  background-image: linear-gradient(
-    to right,
-    rgb(30, 19, 12),
-    rgb(154, 132, 120)
-  );
-}
-.grad211 {
-  background-image: linear-gradient(
-    to right,
-    rgb(18, 194, 233),
-    rgb(196, 113, 237),
-    rgb(246, 79, 89)
-  );
-}
-.grad212 {
-  background-image: linear-gradient(
-    to right,
-    rgb(115, 200, 169),
-    rgb(55, 59, 68)
-  );
-}
-.grad213 {
-  background-image: linear-gradient(
-    to right,
-    rgb(171, 186, 171),
-    rgb(255, 255, 255)
-  );
-  color: black;
-}
-.grad214 {
-  background-image: linear-gradient(
-    to right,
-    rgb(253, 252, 71),
-    rgb(36, 254, 65)
-  );
-  text-shadow: 1px 1px 2px black;
-}
-.grad215 {
-  background-image: linear-gradient(
-    to right,
-    rgb(131, 164, 212),
-    rgb(182, 251, 255)
-  );
-  text-shadow: 1px 1px 2px black;
-}
-.grad216 {
-  background-image: linear-gradient(to right, rgb(72, 85, 99), rgb(41, 50, 60));
-}
-.grad217 {
-  background-image: linear-gradient(to right, rgb(82, 194, 52), rgb(6, 23, 0));
-}
-.grad218 {
-  background-image: linear-gradient(
-    to right,
-    rgb(254, 140, 0),
-    rgb(248, 54, 0)
-  );
-}
-.grad219 {
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 198, 255),
-    rgb(0, 114, 255)
-  );
-}
-.grad220 {
-  background-image: linear-gradient(
-    to right,
-    rgb(112, 225, 245),
-    rgb(255, 209, 148)
-  );
-  text-shadow: 1px 1px 2px black;
-}
-.grad221 {
-  background-image: linear-gradient(
-    to right,
-    rgb(85, 98, 112),
-    rgb(255, 107, 107)
-  );
-}
-.grad222 {
-  background-image: linear-gradient(
-    to right,
-    rgb(157, 80, 187),
-    rgb(110, 72, 170)
-  );
-}
-.grad223 {
-  background-image: linear-gradient(to right, rgb(120, 2, 6), rgb(6, 17, 97));
-}
-.grad224 {
-  background-image: linear-gradient(
-    to right,
-    rgb(213, 51, 105),
-    rgb(203, 173, 109)
-  );
-}
-.grad225 {
-  background-image: linear-gradient(
-    to right,
-    rgb(167, 55, 55),
-    rgb(122, 40, 40)
-  );
-}
-.grad226 {
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(231, 76, 60));
-}
-.grad227 {
-  background-image: linear-gradient(
-    to right,
-    rgb(240, 194, 123),
-    rgb(75, 18, 72)
-  );
-}
-.grad228 {
-  background-image: linear-gradient(
-    to right,
-    rgb(255, 78, 80),
-    rgb(249, 212, 35)
-  );
-}
-.grad229 {
-  background-image: linear-gradient(
-    to right,
-    rgb(173, 209, 0),
-    rgb(123, 146, 10)
-  );
-}
-.grad230 {
-  background-image: linear-gradient(
-    to right,
-    rgb(251, 211, 233),
-    rgb(187, 55, 125)
-  );
-}
-.grad231 {
-  background-image: linear-gradient(
-    to right,
-    rgb(96, 108, 136),
-    rgb(63, 76, 107)
-  );
-}
-.grad232 {
-  background-image: linear-gradient(
-    to right,
-    rgb(85, 205, 252),
-    rgb(179, 157, 233),
-    rgb(247, 168, 184),
-    rgb(246, 216, 221),
-    rgb(255, 255, 255) 45%,
-    rgb(255, 255, 255),
-    rgb(255, 255, 255) 55%,
-    rgb(246, 216, 221),
-    rgb(247, 168, 184),
-    rgb(179, 157, 233),
-    rgb(85, 205, 252)
-  );
-  color: black;
-}
-.grad233 {
-  background-image: linear-gradient(
-    to right,
-    rgb(100, 145, 115),
-    rgb(219, 213, 164)
   );
 }
