@@ -1,4 +1,4 @@
-<img width="400" alt="screenshot" src="https://github.com/DeltaZen/TextCards/raw/master/screenshot.webp">
+<img width="250" alt="screenshot" src="https://github.com/DeltaZen/TextCards/raw/master/screenshot.webp">
 
 # Text Cards [![CI](https://github.com/DeltaZen/TextCards/actions/workflows/ci.yml/badge.svg)](https://github.com/DeltaZen/TextCards/actions/workflows/ci.yml) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
