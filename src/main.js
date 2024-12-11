@@ -1,3 +1,5 @@
+import "./main.css";
+
 import { toJpeg } from "html-to-image";
 
 let browserLang = (window.navigator && window.navigator.language) || "en-US";
