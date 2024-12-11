@@ -7,10 +7,10 @@ browserLang = browserLang.slice(0, 2).toLowerCase();
 let placeholder, shareLabel;
 if (browserLang === "es") {
   placeholder = "¿Qué estás pensando?";
-  shareLabel = "Compartir con...";
+  shareLabel = "Enviar...";
 } else {
   placeholder = "What's on your mind?";
-  shareLabel = "Share with...";
+  shareLabel = "Send...";
 }
 
 let style = 0;
